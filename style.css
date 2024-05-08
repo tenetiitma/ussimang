@@ -88,8 +88,31 @@ body {
 #game-over {
   position: absolute;
   background: white;
+  border: rgb(128, 128, 128, 0.3) solid 1px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   font-size: 2rem;
-  padding: 0.4rem;
+  padding: 0.8rem;
   font-family: sans-serif;
   font-weight: bold;
+}
+
+#restart {
+  background-color: #e1e1e1;
+  border: rgb(128, 128, 128, 0.3) solid 1px;
+  color: rgb(64, 64, 64);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.1s;
+  margin-left: 25%;
+  margin-bottom: 1rem;
+}
+
+#restart:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
