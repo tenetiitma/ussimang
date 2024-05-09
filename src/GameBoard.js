@@ -30,7 +30,7 @@ class GameBoard {
         const foodCoordinates = food.y + "-" + food.x;
         if (id == foodCoordinates) {
           cellTd.innerText = food.getEmoji();
-          // cellTd.classList.add('food');
+          cellTd.classList.add("food");
         }
 
         rowTr.append(cellTd);
