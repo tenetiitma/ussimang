@@ -116,3 +116,52 @@ body {
   background-color: #f0f0f0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+.mobile {
+  .arrow-key-container {
+    display: inline-block;
+    text-align: center;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+#up,
+#down,
+#left,
+#right {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  box-shadow: -1px 1px 0 #999, -2px 2px 0 #999, -3px 3px 0 #999, -4px 4px 0 #999;
+  color: #fff;
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: bold;
+  height: 65px;
+  justify-content: center;
+  margin: 5px;
+  transform: translate3d(0, 0, 0);
+  transition: box-shadow 0.1s linear, transform 0.1s linear;
+  width: 65px;
+  &:active,
+  &.press {
+    box-shadow: 0px 0px 0 #999, 0px 0px 0 #999, 0px 0px 0 #999, -1px 1px 0 #999;
+    transform: translate3d(-3px, 3px, 0);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #game-board td {
+    width: 16px;
+    height: 16px;
+  }
+
+  .snake {
+    font-size: 12px;
+  }
+
+  .food {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
